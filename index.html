@@ -1,126 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>UBM Integrated Services | Links</title>
-
-<style>
-    /* ---------- Base Styling ---------- */
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UBM Integrated Services - Linktree</title>
+  <style>
     body {
-        margin: 0;
-        padding: 0;
-        font-family: 'Open Sans', sans-serif;
-        background: linear-gradient(180deg, #3E1D72 0%, #5A2FA7 100%);
-        color: #FFFFFF;
-        text-align: center;
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(180deg, #3E1D72, #5A2FA7);
+      color: #ffffff;
+      text-align: center;
+      padding: 40px 20px;
     }
 
-    /* ---------- Logo Section ---------- */
-    .logo-container {
-        margin-top: 50px;
-        margin-bottom: 20px;
+    .container {
+      max-width: 450px;
+      margin: auto;
     }
 
-    .logo-circle {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        background: #C8B6FF;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-        animation: fadeIn 1.2s ease;
+    .logo-wrapper {
+      width: 120px;
+      height: 120px;
+      background: #C8B6FF;
+      margin: 0 auto;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      animation: fadeIn 1.2s ease;
     }
 
-    .logo-circle img {
-        width: 70%;
-        height: auto;
+    .logo-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
     }
 
-    /* ---------- Text Section ---------- */
     h1 {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 32px;
-        margin-top: 25px;
-        margin-bottom: 5px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 26px;
+      margin-top: 20px;
+      letter-spacing: 1px;
     }
 
     .tagline {
-        font-size: 14px;
-        color: #E5E5E5;
-        margin-bottom: 40px;
+      font-size: 14px;
+      color: #E5E5E5;
+      margin-bottom: 35px;
     }
 
-    /* ---------- Buttons ---------- */
-    .link-button {
-        display: block;
-        width: 80%;
-        max-width: 380px;
-        margin: 15px auto;
-        padding: 16px 24px;
-        background-color: #5A2FA7;
-        color: #FFFFFF;
-        border: none;
-        border-radius: 50px;
-        font-size: 18px;
-        font-weight: 600;
-        text-decoration: none;
-        transition: all 0.25s ease;
-        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    .link-btn {
+      display: block;
+      background: #5A2FA7;
+      padding: 15px 20px;
+      color: white;
+      text-decoration: none;
+      margin: 15px 0;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: 600;
+      transition: all 0.25s ease;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
     }
 
-    /* Hover and Tap Animations */
-    .link-button:hover {
-        transform: translateY(-4px);
-        box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.3);
-        background-color: #6C3FD1;
-        border: 2px solid #C8B6FF;
+    .link-btn:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+      background: #6D43C4;
     }
 
-    .link-button:active {
-        transform: scale(0.97);
+    .link-btn:active {
+      transform: scale(0.96);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     }
 
-    /* ---------- Footer ---------- */
     footer {
-        margin-top: 50px;
-        font-size: 12px;
-        color: #C8B6FF;
-        margin-bottom: 20px;
+      margin-top: 40px;
+      font-size: 12px;
+      color: #E5E5E5;
     }
 
-    /* ---------- Animations ---------- */
     @keyframes fadeIn {
-        from { opacity: 0; transform: scale(0.85); }
-        to { opacity: 1; transform: scale(1); }
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
-</style>
+  </style>
 </head>
-
 <body>
-
-    <!-- Logo Section -->
-    <div class="logo-container">
-        <div class="logo-circle">
-            <img src="UBM-LOGO.png" alt="UBM Integrated Services Logo">
-        </div>
+  <div class="container">
+    <div class="logo-wrapper">
+      <img src="https://raw.githubusercontent.com/Fairguyy/UBM-Images/refs/heads/main/3.png" alt="UBM Logo" />
     </div>
 
-    <!-- Company Title -->
     <h1>UBM Integrated Services</h1>
-    <div class="tagline">Civil/structural engineers. Building material suppliers.</div>
+    <p class="tagline">Civil/structural engineers. Building material supply. Contractors.</p>
 
     <!-- Buttons -->
-    <a href="https://web.facebook.com/profile.php?id=61560381420726" class="link-button">🔗 Visit Our Facebook Page</a>
-    <a href="https://instagram.com" class="link-button">📸 Follow Us on Instagram</a>
+    <a class="link-btn" href="https://web.facebook.com/profile.php?id=61560381420726" target="_blank">🔗 Visit Our Facebook Page</a>
+    <a class="link-btn" href="#" target="_blank">📸 Follow Us on Instagram</a>
 
-    <!-- Footer -->
-    <footer>
-        © 2025 UBM Integrated Services. All Rights Reserved.
-    </footer>
+        <a class="link-btn" href="mailto:iamdiaskid@gmail.com">📧 Email Us</a>
 
+    <footer>© 2025 UBM Integrated Services. All Rights Reserved.</footer>
+  </div>
 </body>
 </html>
